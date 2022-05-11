@@ -1,0 +1,3 @@
+SELECT lname
+FROM Employee, Works, Project
+WHERE pname="Aquarius", pnumber=pno, essn=ssn, bdate="1957"
