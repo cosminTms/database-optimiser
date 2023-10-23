@@ -1,9 +1,16 @@
 /**
  * 
  */
-package sjdb;
+package sjdb.operators.unary;
+
+import sjdb.PlanVisitor;
+import sjdb.operators.binary.Predicate;
+import sjdb.operators.Operator;
+import sjdb.operators.unary.UnaryOperator;
 
 /**
+ * Select * FROM input WHERE predicate
+ *
  * @author nmg
  *
  */

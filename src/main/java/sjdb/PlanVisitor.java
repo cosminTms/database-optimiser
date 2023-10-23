@@ -1,5 +1,11 @@
 package sjdb;
 
+import sjdb.operators.binary.Join;
+import sjdb.operators.binary.Product;
+import sjdb.operators.unary.Project;
+import sjdb.operators.Scan;
+import sjdb.operators.unary.Select;
+
 /**
  * This is an interface for a visitor class that performs a depth-first,
  * left-to-right traversal of a query plan.

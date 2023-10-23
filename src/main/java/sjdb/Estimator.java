@@ -1,5 +1,15 @@
 package sjdb;
 
+import sjdb.model.Attribute;
+import sjdb.operators.binary.Join;
+import sjdb.operators.binary.Predicate;
+import sjdb.model.Relation;
+import sjdb.operators.Operator;
+import sjdb.operators.binary.Product;
+import sjdb.operators.unary.Project;
+import sjdb.operators.Scan;
+import sjdb.operators.unary.Select;
+
 import java.util.*;
 
 public class Estimator implements PlanVisitor {

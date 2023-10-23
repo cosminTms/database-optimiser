@@ -1,7 +1,10 @@
 /**
  * 
  */
-package sjdb;
+package sjdb.operators.unary;
+
+import sjdb.PlanVisitor;
+import sjdb.operators.Operator;
 
 /**
  * @author nmg
@@ -25,8 +28,8 @@ public abstract class UnaryOperator extends Operator {
 		return this.inputs.get(0);
 	}
 
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#accept(sjdb.OperatorVisitor)
+	/**
+	 * @see sjdb.operators.Operator#accept(sjdb.OperatorVisitor)
 	 */
 	public void accept(PlanVisitor visitor) {
 		super.accept(visitor);

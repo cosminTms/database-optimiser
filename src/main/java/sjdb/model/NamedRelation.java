@@ -1,7 +1,9 @@
 /**
  * 
  */
-package sjdb;
+package sjdb.model;
+
+import sjdb.model.Relation;
 
 /**
  * This class represents a named relation which is fed into a query plan
@@ -23,7 +25,7 @@ public class NamedRelation extends Relation {
 		this.name = name;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -31,8 +33,8 @@ public class NamedRelation extends Relation {
 		return name;
 	}
 	
-	/* (non-Javadoc)
-	 * @see sjdb.Relation#render()
+	/**
+	 * @see sjdb.model.Relation#render()
 	 */
 	public String render() {
 		return name + ":" + super.render();

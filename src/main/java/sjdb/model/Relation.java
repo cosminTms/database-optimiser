@@ -1,4 +1,6 @@
-package sjdb;
+package sjdb.model;
+
+import sjdb.model.Attribute;
 
 import java.util.Iterator;
 import java.util.List;
@@ -17,7 +19,7 @@ public class Relation {
 	/**
 	 * Create a new relation with the given tuple count
 	 */
-	protected Relation(int size) {
+	public Relation(int size) {
 		this.attributes = new ArrayList<Attribute>();
 		this.size = size;
 	}

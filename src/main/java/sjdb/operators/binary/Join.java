@@ -1,4 +1,9 @@
-package sjdb;
+package sjdb.operators.binary;
+
+import sjdb.PlanVisitor;
+import sjdb.operators.binary.Predicate;
+import sjdb.operators.Operator;
+import sjdb.operators.binary.BinaryOperator;
 
 /**
  * This class represents a join operator.
@@ -22,7 +27,7 @@ public class Join extends BinaryOperator {
 	}
 	
 	/* (non-Javadoc)
-	 * @see sjdb.BinaryOperator#accept(sjdb.OperatorVisitor)
+	 * @see sjdb.operators.binary.BinaryOperator#accept(sjdb.OperatorVisitor)
 	 */
 	public void accept(PlanVisitor visitor) {
 		super.accept(visitor);

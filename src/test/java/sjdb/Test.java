@@ -1,10 +1,15 @@
 package sjdb;
 
-import java.io.*;
 import java.util.ArrayList;
-import java.util.List;
 
-import sjdb.DatabaseException;
+import sjdb.catalogue.Catalogue;
+import sjdb.model.Attribute;
+import sjdb.operators.binary.Predicate;
+import sjdb.operators.Operator;
+import sjdb.operators.binary.Product;
+import sjdb.operators.unary.Project;
+import sjdb.operators.Scan;
+import sjdb.operators.unary.Select;
 
 public class Test {
 	private Catalogue catalogue;

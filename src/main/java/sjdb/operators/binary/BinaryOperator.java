@@ -1,4 +1,8 @@
-package sjdb;
+package sjdb.operators.binary;
+
+import sjdb.PlanVisitor;
+import sjdb.model.Relation;
+import sjdb.operators.Operator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,26 +39,24 @@ public abstract class BinaryOperator extends Operator {
 		return this.inputs.get(1);
 	}
 
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#getInputs()
+	/**
+	 * @see sjdb.operators.Operator#getInputs()
 	 */
 	@Override
 	public List<Operator> getInputs() {
-		List<Operator> inputs = new ArrayList<Operator>();
-		inputs.addAll(this.inputs);
-		return inputs;
+		return this.inputs;
 	}
 
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#getOutput()
+	/**
+	 * @see sjdb.operators.Operator#getOutput()
 	 */
 	@Override
 	public Relation getOutput() {
 		return this.output;
 	}
 	
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#accept(sjdb.OperatorVisitor)
+	/**
+	 * @see sjdb.operators.Operator#accept(sjdb.OperatorVisitor)
 	 */
 	public void accept(PlanVisitor visitor) {
 		super.accept(visitor);

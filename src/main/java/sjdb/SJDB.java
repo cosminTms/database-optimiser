@@ -1,4 +1,9 @@
 package sjdb;
+import sjdb.catalogue.Catalogue;
+import sjdb.catalogue.CatalogueParser;
+import sjdb.catalogue.QueryParser;
+import sjdb.operators.Operator;
+
 import java.io.*;
 import java.text.DecimalFormat;
 

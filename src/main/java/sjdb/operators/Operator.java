@@ -1,7 +1,10 @@
 /**
  * 
  */
-package sjdb;
+package sjdb.operators;
+
+import sjdb.PlanVisitor;
+import sjdb.model.Relation;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -15,27 +18,23 @@ import java.util.Iterator;
  */
 public abstract class Operator {
 	/**
-	 * The list of child operators that feed their outputs to
-	 * this operator.
+	 * The list of child operators that feed their outputs to this operator.
 	 */
-	protected ArrayList<Operator> inputs;
+	protected List<Operator> inputs;
 	/**
 	 * The relation produced by this operator as output.
 	 */
 	protected Relation output;
 	
 	public Operator() {
-		this.inputs = new ArrayList<Operator>();
+		this.inputs = new ArrayList<>();
 	}
 	
 	/**
-	 * Return an arraylist containing the child operators of this
-	 * operator.
+	 * Return a list containing the child operators of this operator.
 	 * @return Child operators
 	 */
 	public List<Operator> getInputs() {
-		List<Operator> inputs = new ArrayList<Operator>();
-		inputs.addAll(this.inputs);
 		return inputs;
 	}
 	

@@ -1,4 +1,6 @@
-package sjdb;
+package sjdb.catalogue;
+import sjdb.catalogue.Catalogue;
+
 import java.io.*;
 
 /**

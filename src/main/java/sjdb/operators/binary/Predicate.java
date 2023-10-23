@@ -1,4 +1,7 @@
-package sjdb;
+package sjdb.operators.binary;
+
+
+import sjdb.model.Attribute;
 
 /**
  * This class is used to represent the predicates associated with 

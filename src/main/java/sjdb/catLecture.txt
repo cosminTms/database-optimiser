@@ -1,3 +1,0 @@
-Employee:400:essn,400:bdate,80:lname,350
-Project:40:pnumber,40:pname,35
-Works:400:ssn,400:pno,40

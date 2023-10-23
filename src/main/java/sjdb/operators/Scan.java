@@ -1,4 +1,10 @@
-package sjdb;
+package sjdb.operators;
+
+import sjdb.PlanVisitor;
+import sjdb.model.Attribute;
+import sjdb.model.NamedRelation;
+import sjdb.model.Relation;
+import sjdb.operators.Operator;
 
 import java.util.List;
 import java.util.Iterator;
@@ -28,8 +34,8 @@ public class Scan extends Operator {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#getInputs()
+	/**
+	 * @see Operator#getInputs()
 	 */
 	@Override
 	public List<Operator> getInputs() {
@@ -45,7 +51,7 @@ public class Scan extends Operator {
 		return this.relation;
 	}
 	
-	/* (non-Javadoc)
+	/**
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -53,8 +59,8 @@ public class Scan extends Operator {
 		return this.relation.toString();
 	}
 	
-	/* (non-Javadoc)
-	 * @see sjdb.Operator#accept(sjdb.OperatorVisitor)
+	/**
+	 * @see Operator#accept(sjdb.OperatorVisitor)
 	 */
 	public void accept(PlanVisitor visitor) {
 		visitor.visit(this);

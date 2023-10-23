@@ -1,9 +1,12 @@
 /**
  * 
  */
-package sjdb;
+package sjdb.model;
 
 /**
+ * Attribute is the model class which represents a column from a database relation table.
+ * It can have a name and value field, which represents the number of distinct values
+ *
  * @author nmg
  *
  */

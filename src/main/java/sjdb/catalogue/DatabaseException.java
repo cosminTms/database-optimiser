@@ -1,4 +1,4 @@
-package sjdb;
+package sjdb.catalogue;
 
 /**
  * Exception class for representing failures to retrieve named relations

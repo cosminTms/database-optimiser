@@ -1,6 +1,20 @@
-package sjdb;
+package sjdb.catalogue;
 
+import sjdb.model.Attribute;
+import sjdb.model.NamedRelation;
+import sjdb.operators.Operator;
+import sjdb.operators.Scan;
+import sjdb.operators.binary.Predicate;
+import sjdb.operators.binary.Product;
+import sjdb.operators.unary.Project;
+import sjdb.operators.unary.Select;
+
+import java.io.BufferedReader;
+import java.io.Reader;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * This class contains the system catalogue for the database; it

@@ -1,5 +1,11 @@
 package sjdb;
 
+import sjdb.operators.binary.Join;
+import sjdb.operators.binary.Product;
+import sjdb.operators.unary.Project;
+import sjdb.operators.Scan;
+import sjdb.operators.unary.Select;
+
 public class Inspector implements PlanVisitor {
 
 	public Inspector() {

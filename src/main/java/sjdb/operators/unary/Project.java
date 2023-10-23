@@ -1,4 +1,9 @@
-package sjdb;
+package sjdb.operators.unary;
+
+import sjdb.PlanVisitor;
+import sjdb.model.Attribute;
+import sjdb.operators.Operator;
+import sjdb.operators.unary.UnaryOperator;
 
 import java.util.List;
 import java.util.Iterator;
@@ -29,7 +34,7 @@ public class Project extends UnaryOperator {
 	}
 	
 	/* (non-Javadoc)
-	 * @see sjdb.UnaryOperator#accept(sjdb.OperatorVisitor)
+	 * @see sjdb.operators.unary.UnaryOperator#accept(sjdb.OperatorVisitor)
 	 */
 	public void accept(PlanVisitor visitor) {
 		// depth-first traversal - accept the 
