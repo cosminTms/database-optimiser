@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #FFC0CB, #FF5733);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensure full coverage */
+    color: #333; /* Text color */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh; /* Ensure the container covers the full viewport height */
+}
+
+
+.input-container {
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #F7DC6F; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.input-section label, .query-section label {
+    margin-bottom: 10px;
+    font-weight: bold; /* Make labels bold */
+}
+
+.input-section input, .query-section textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: 90%;
+}
+
+.table-display {
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    background: #E74C3C; /* Light red background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.table-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    background: #82E0AA; /* Light green background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.table-box:hover {
+    background: #58D68D; /* Darker green background on hover */
+}
+
+.displayed-name {
+    font-weight: bold;
+}
+
+.displayed-size {
+    font-size: smaller;
+}

@@ -2,14 +2,17 @@ package sjdb;
 
 import java.util.ArrayList;
 
-import sjdb.catalogue.Catalogue;
-import sjdb.model.Attribute;
-import sjdb.operators.binary.Predicate;
-import sjdb.operators.Operator;
-import sjdb.operators.binary.Product;
-import sjdb.operators.unary.Project;
-import sjdb.operators.Scan;
-import sjdb.operators.unary.Select;
+import com.queryOptimiser.sjdb.Estimator;
+import com.queryOptimiser.sjdb.Inspector;
+import com.queryOptimiser.sjdb.Optimiser;
+import com.queryOptimiser.sjdb.catalogue.Catalogue;
+import com.queryOptimiser.sjdb.model.Attribute;
+import com.queryOptimiser.sjdb.operators.binary.Predicate;
+import com.queryOptimiser.sjdb.operators.Operator;
+import com.queryOptimiser.sjdb.operators.binary.Product;
+import com.queryOptimiser.sjdb.operators.unary.Project;
+import com.queryOptimiser.sjdb.operators.Scan;
+import com.queryOptimiser.sjdb.operators.unary.Select;
 
 public class Test {
 	private Catalogue catalogue;

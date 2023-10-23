@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Name Display</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <div class="input-section">
+                <label for="relationName">Relation Name:</label>
+                <input type="text" id="relationName" placeholder="Enter relation name">
+                <label for="relationSize">Relation Size:</label>
+                <input type="number" id="relationSize" placeholder="Enter relation size" disabled>
+                <button id="displayBtn" disabled>Display</button>
+            </div>
+            <div class="query-section">
+                <label for="selectQuery">Select Query:</label>
+                <textarea id="selectQuery" rows="4" cols="50" placeholder="Enter SQL script"></textarea>
+            </div>
+        </div>
+        <div class="table-display" id="tableDisplay">
+            <!-- Displayed tables will be added here -->
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
