@@ -1,6 +1,3 @@
-/**
- * 
- */
 package sjdb;
 import java.io.*;
 import java.text.DecimalFormat;
@@ -17,8 +14,8 @@ public class SJDB {
 	 */
 	public static void main(String[] args) throws Exception {
 		// read serialised catalogue from file and parse
-//		String catFile = "D:\\University of Southampton\\3rd Year\\Second Term\\COMP3211 - Advanced Databases\\sjdb\\data\\catLecture.txt";
-		String catFile = "D:\\University of Southampton\\3rd Year\\Second Term\\COMP3211 - Advanced Databases\\sjdb\\data\\cat.txt";
+		String catFile = "D:\\University of Southampton\\3rd Year\\Second Term\\COMP3211 - Advanced Databases\\sjdb\\data\\catLecture.txt";
+//		String catFile = "D:\\University of Southampton\\3rd Year\\Second Term\\COMP3211 - Advanced Databases\\sjdb\\data\\cat.txt";
 //		String catFile = args[0];
 		Catalogue cat = new Catalogue();
 		CatalogueParser catParser = new CatalogueParser(catFile, cat);

@@ -165,7 +165,7 @@ public class Optimiser implements PlanVisitor{
             // it would include only necessary attributes, thus eliminating redundant memory load
             updateAttributes();
 
-            // udate output relation before processing the operator
+            // update output relation before processing the operator
             if (leafBlock.getOutput() == null){
                 leafBlock.accept(estimator);
             }
@@ -244,6 +244,7 @@ public class Optimiser implements PlanVisitor{
 
         for (List<Predicate> order : predicateOrderings){
             Operator potentialPlan = createPotentialOptimalPlan(leafBlocks, order);
+            potentialPlan.accept(new Inspector());
 
             int currentCost = estimator.totalCost(potentialPlan);
 
@@ -256,7 +257,10 @@ public class Optimiser implements PlanVisitor{
         return optimalPlan;
     }
 
-    public Operator createPotentialOptimalPlan(List<Operator> leafBlocks, List<Predicate> predicateOrder){
+    public Operator createPotentialOptimalPlan(List<Operator> leafs, List<Predicate> predicateOrder){
+        List<Operator> leafBlocks = new ArrayList<>();
+        leafBlocks.addAll(leafs);
+
         if (leafBlocks.size() == 1){
             Operator plan = leafBlocks.get(0);
             if (plan.getOutput() == null){

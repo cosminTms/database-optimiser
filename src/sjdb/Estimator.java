@@ -14,9 +14,9 @@ public class Estimator implements PlanVisitor {
 
 
 	public int totalCost(Operator plan){
-		cost = 0;
+		this.cost = 0;
 		plan.accept(this);
-		return cost;
+		return this.cost;
 	}
 
 	/* 
